@@ -1,0 +1,107 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{geometry}
+\usepackage{cite}
+\geometry{a4paper, top=10mm}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+\name{\heiti{张仲霖}}
+
+\basicInfo{
+  \email{zhonglin\_zhang@outlook.com} \textperiodcentered\ 
+  \phone{(+1) 424-333-8171} \textperiodcentered\ 
+  \github{https://github.com/EVANMON}}
+\basicInfo{\faHome{10933 Rochester Ave, Apt 109, Los Angeles, CA 90024, USA}}
+ % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{加州大学洛杉矶分校}, 洛杉矶}{2017年9月 -- 2019年3月(预计)}
+\textit{在读硕士}\ 电子与计算机工程，GPA: 3.85 / 4.0 \\ 相关课程: 机器学习导论, 大规模数据挖掘, 无线与移动网络协议及系统设计
+\datedsubsection{\textbf{上海交通大学}, 上海}{2013年9月 -- 2017年6月}
+\textit{学士}\ 信息工程，GPA: 3.60 / 4.0 \\ 相关课程: 数据结构与算法, C++编程, Python编程基础, 操作系统, 数字语音处理, 嵌入式系统
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{阿里妈妈国际广告算法大赛}(\textit{Python, Machine Learning})}{2018年3月 -- 至今}
+%\role{实习}{经理: 高富帅}
+%xxx后端开发
+\begin{itemize}
+  \item 利用淘宝平台提供的近48万交易数据对4种学习模型进行训练，预测搜索广告的转换概率
+  \item 训练中提取的特征包括广告商品，用户信息，网页上下文以及网店信息
+  \item 计算预测结果的Logarithmic Loss作为训练评估指标，目前已取得的最低值为0.08240
+\end{itemize}
+
+\datedsubsection{\textbf{数据挖掘模型及算法研究}(\textit{Python, Machine Learning})}{2018年1月 -- 2018年3月}
+%\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+%\begin{onehalfspacing}
+%分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+\begin{itemize}
+  \item 对\textit{20 Newsgroups}数据集中的18846篇文章建立TF-IDF矩阵并使用k-Means聚类算法复原标签
+  \item 利用协同过滤方法处理关于9125部电影的100004条用户评分，实现电影推荐系统并检验准确性
+  \item 通过学习一个网络备份系统的18588条记录，使用回归算法(Neural Network, k-NearestNeighbor, Polynomial Function Model)预测备份资料的规模
+\end{itemize}
+%\end{onehalfspacing}
+
+\datedsubsection{\textbf{手机游戏的网络延迟研究}(\textit{Python, LTE})}{2017年10月 -- 2017年12月}
+%\role{\LaTeX, Python}{个人项目}
+%\begin{onehalfspacing}
+%优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\begin{itemize}
+  \item 利用Wireshark收集安卓平台的6个手机游戏的传输数据并研究其通讯规律
+  \item 负责上行传输过程的延迟分析，具体工作包括：
+  \begin{itemize}
+    \item 使用MobileInsight记录LTE模式下手机游戏的数据包，实现Python程序对超过30000条数据进行批量处理，量化过程中出现的时延，并单独分析其对总时延的影响
+    \item 在研究中，网络质量提高15dBm时可以降低大约78.8\%的上行传输时延
+  \end{itemize}
+  %\item 支持 FontAwesome 4.5.0
+\end{itemize}
+%\end{onehalfspacing}
+
+\datedsubsection{\textbf{全息增强现实(AR)智能眼镜设计}(\textit{AR, Java})}{2015年10月 -- 2016年10月}
+%\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+%\begin{onehalfspacing}
+%分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+\begin{itemize}
+  \item 在安卓平台实现基于肤色的手势识别和跟踪算法，并开发其相关AR应用
+  \item 设计基于全息图原理的AR智能显示光学结构，使用COMSOL仿真软件进行仿真并优化设计参数
+\end{itemize}
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ 技能与兴趣}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: C++ == Python > Java
+  \item API / 开发工具: Scikit-learn, Surprise, IPython, Pycharm, Wireshark, Github 
+  \item 研究兴趣: 机器学习，数据挖掘，AR/VR显示，计算机网络系统 
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\datedline{专业优秀奖学金 (25/180)}{2015年10月}
+\datedline{校级奖学金 (20/180)}{2014年10月}
+
+\section{\faInfo\ 兴趣与公益活动}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 个人兴趣: 排球，合唱，电影，侦探小说
+  \item \datedline{Gapper国际义工项目 \textit{斯里兰卡}}{2015年7月}
+  \begin{itemize}[parsep=0.5ex]
+    \item 在汉班托塔一所当地中学实用英语为两个年级的学生教授自然科学
+  \end{itemize}  
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
